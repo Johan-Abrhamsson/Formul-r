@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What are you</title>
+    <script src="javascrips.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -23,49 +25,84 @@
     <fieldset>
         <legend>
             <label>What is closest?:
-            <input type="radio" name="A1"> My Phone
-            <input type="radio" name="A1"> Closed caption
-            <input type="radio" name="A1"> You don't know the pub that is closest to you?
+            
             </label>
         </legend>
+        <div id="000">
+        <label>
+        <input type="radio" name="A1" value="Human"> My Phone
+        </label>
+        <label>
+        <input type="radio" name="A1"> Closed caption
+        </label>
+        <label>
+        <input type="radio" name="A1">You don't know the pub that is closest to you?
+        </label>
+        </div>
     </fieldset>
     <fieldset>
         <legend>
             <label>What is 5*X=20?:
-            <input type="radio" name="A2"> 4
-            <input type="radio" name="A2"> 5x - 15 = -20
-            <input type="radio" name="A2"> You tell me.
+
+                </label>
         </legend>
+        <label>
+        <input type="radio" name="A2"> 4
+        </label>
+        <label>
+        <input type="radio" name="A2"> 5x - 15 = -20
+        </label>
+        <label>
+        <input type="radio" name="A2"> You tell me.
+        </label>
     </fieldset>
     <fieldset>
         <legend>
             <label>Did a bot write this?: <img src="botimgmaybe.jpg" alt="--" height="100px">
+                </label>
+                </legend>
+                <label>
                 <input type="radio" name="A3"> Writing such programs is difficult.
+                </label>
+                <label>
                 <input type="radio" name="A3"> Did I say anything about writing?
+                </label>
+                <label>
                 <input type="radio" name="A3"> Yes a bot wrote this.
             </label>
-        </legend>
     </fieldset>
     <fieldset>
         <legend>
             <label>What do you like the most?:
+</label>
+            </legend>
+            <label>
                 <input type="radio" name="A4"> Sleep or food.
+                </label>
+                <label>
                 <input type="radio" name="A4"> Sword.
+                </label>
+                <label>
                 <input type="radio" name="A4"> Science. I just love it.
             </label>
-        </legend>
     </fieldset>
-<fieldset>
-    <legend>
-        <label>What is your name?:
-            <input type="radio" name="A5"> Lydia, I already told you.
-            <input type="radio" name="A5"> what I wrote above.
-            <input type="radio" name="A5"> My name is Michelle.
-        </label>
-    </legend>
-</fieldset>
-    <button>Start</button>
-    <button>End</button>
+
+        <fieldset>
+            <legend>
+                <label>What is your name?:
+                </label>
+            </legend>
+            <label>
+                <input type="radio" name="A5"> Lydia, I already told you.
+            </label>
+            <label>
+                <input type="radio" name="A5"> What I wrote above.
+            </label>
+            <label>
+                <input type="radio" name="A5"> My name is Michelle.
+            </label>
+        </fieldset>
+    <button onclick="See()">End</button>
 </form>
     </main>
     <footer>
