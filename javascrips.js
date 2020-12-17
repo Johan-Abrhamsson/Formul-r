@@ -45,7 +45,6 @@ function See() {
 }
 
 //document.getElementById("namefirst").value=name;
-
 if (HumanPoints>YahooAwnsersPoints && HumanPoints>ArtIntPoints){
   whatYouAre = "Human!";
   document.getElementById("whatYouAreHtml").value = whatYouAre;
@@ -87,5 +86,10 @@ document.getElementById("fArtInt").value = ArtIntPoints * 20 + "%";
   console.log(YahooAwnsersPoints);
   console.log(ArtIntPoints);
   done++;
+}
+if ((HumanPoints + YahooAwnsersPoints + ArtIntPoints) == 0){
+  whatYouAre = "You havent put in any thing";
+  document.getElementById("whatYouAreHtml").value = whatYouAre;
+  done=0;
 }
 }

@@ -1,3 +1,45 @@
+body {
+  background-color: skyblue;
+}
+
 h1 {
+  text-align: center;
   color: blue;
+  size: 20px;
+  border-radius: 10%;
+  -moz-border-radius: 10%px;
+  border: 10px darkblue solid;
+  background-color: darkblue;
+}
+.questionName {
+  color: blueviolet;
+  font-weight: bold;
+}
+input {
+  background-color: steelblue;
+}
+button {
+  background-color: lightblue;
+  color: blueviolet;
+  padding: 10px;
+  border-radius: 30%;
+  -moz-border-radius: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+/* button {
+  background-color: lightblue;
+  color: blueviolet;
+} */
+form {
+  border: 10px black double;
+  border-radius: 2%;
+  -moz-border-radius: 10%;
+  padding: 10px;
+}
+.aling {
+  align-self: center;
+}
+.image {
+  border: 10px solid black;
 }
