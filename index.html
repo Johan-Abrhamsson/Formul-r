@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What are you</title>
+    <title>What are you?</title>
     <script src="javascrips.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>
-            What are you
+            What are you?
         </h1>
     </header>
     <main>
@@ -18,7 +18,7 @@
     <fieldset>
         <legend>
             <label>Name:
-                <input type="text" id="firstname">
+                <input type="text" name="putName">
             </label>
         </legend>
     </fieldset>
@@ -33,10 +33,10 @@
         <input type="radio" name="A1" value="Human"> My Phone
         </label>
         <label>
-        <input type="radio" name="A1"> Closed caption
+        <input type="radio" name="A1" value="Yahoo"> Closed caption
         </label>
         <label>
-        <input type="radio" name="A1">You don't know the pub that is closest to you?
+        <input type="radio" name="A1" value="ArtInt">You don't know the pub that is closest to you?
         </label>
         </div>
     </fieldset>
@@ -47,13 +47,13 @@
                 </label>
         </legend>
         <label>
-        <input type="radio" name="A2"> 4
+        <input type="radio" name="A2" value="Human"> 4
         </label>
         <label>
-        <input type="radio" name="A2"> 5x - 15 = -20
+        <input type="radio" name="A2" value="Yahoo"> 5x - 15 = -20
         </label>
         <label>
-        <input type="radio" name="A2"> You tell me.
+        <input type="radio" name="A2" value="ArtInt"> You tell me.
         </label>
     </fieldset>
     <fieldset>
@@ -62,28 +62,27 @@
                 </label>
                 </legend>
                 <label>
-                <input type="radio" name="A3"> Writing such programs is difficult.
+                <input type="radio" name="A3" value="Yahoo"> Writing such programs is difficult.
                 </label>
                 <label>
-                <input type="radio" name="A3"> Did I say anything about writing?
+                <input type="radio" name="A3" value="ArtInt"> Did I say anything about writing?
                 </label>
                 <label>
-                <input type="radio" name="A3"> Yes a bot wrote this.
+                <input type="radio" name="A3" value="Human"> Yes, I belive a bot wrote this.
             </label>
     </fieldset>
     <fieldset>
         <legend>
-            <label>What do you like the most?:
-</label>
+            <label>What do you like the most?:</label>
             </legend>
             <label>
-                <input type="radio" name="A4"> Sleep or food.
+                <input type="radio" name="A4" value="Human"> Sleep or food. 
                 </label>
                 <label>
-                <input type="radio" name="A4"> Sword.
+                <input type="radio" name="A4" value="Yahoo"> Sword.
                 </label>
                 <label>
-                <input type="radio" name="A4"> Science. I just love it.
+                <input type="radio" name="A4" value="ArtInt"> Science. I just love it.
             </label>
     </fieldset>
 
@@ -93,20 +92,33 @@
                 </label>
             </legend>
             <label>
-                <input type="radio" name="A5"> Lydia, I already told you.
+                <input type="radio" name="A5" value="ArtInt"> Lydia, I already told you.
             </label>
             <label>
-                <input type="radio" name="A5"> What I wrote above.
+                <input type="radio" name="A5" value="Human"> What I wrote above.
             </label>
             <label>
-                <input type="radio" name="A5"> My name is Michelle.
+                <input type="radio" name="A5" value="Yahoo"> My name is Michelle.
             </label>
         </fieldset>
-    <button onclick="See()">End</button>
+    <button type="button" onclick="See()">End</button>
 </form>
+
+<aticle>
+    <div class="cantSee">
+    <h2> You are most likely a:</h2>
+    <p><input id="whatYouAreHtml"></p>
+    </div>
+    <h3>You are this much Human:</h3>
+    <input id="fHuman">
+    <h3>You are this much Yahoo awnsers:</h3>
+    <input id="fYahoo">
+<h3>You are this much Artificial Intelligence:</h3>
+    <input id="fArtInt">
+</aticle>
     </main>
     <footer>
-
+        <p>Share this to your friends and se what they are the most like.</p>
     </footer>
 </body>
 </html>
